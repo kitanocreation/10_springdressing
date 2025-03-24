@@ -1,0 +1,184 @@
+@import './base';
+
+html {
+
+    body {
+        
+        .sprdr-fv {
+            height: 100vw;
+        }
+
+        .sprdr_main {
+            background-color: $yellow;
+
+            .sprdr-epilogue {
+                width: 100%;
+                overflow-x: hidden;
+
+                .sprdr-con:nth-of-type(1) {
+                    width: 100%;
+                    height: 35vw;
+                    position: relative;
+
+                    img:nth-of-type(1) {
+                        width: calc(63.7vw * .95);
+                        transform: translateX(calc(-19.5vw * .95));
+                    }
+                    
+                    img:nth-of-type(2) {
+                        width: fit-content;
+                        height: 43.2vw;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateX(26.1vw);
+                    }
+                }
+
+                h1 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: $blue;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 20px;
+                    @include font-l;
+                    color: $black;
+                    text-align: center;
+                }
+
+                .sprdr-con:nth-of-type(2) {
+                    width: 100%;
+                    height: 42.5vw;
+                    margin-top: 10px;
+                    position: relative;
+
+                    img:nth-of-type(1) {
+                        width: 33.3vw;
+                        margin-left: 20px;
+                    }
+                    
+                    img:nth-of-type(2) {
+                        width: fit-content;
+                        height: calc(61.3vw * .675);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translateX(calc(20.5vw * .675));
+                    }
+                }
+            }
+
+            .sprdr-detail {
+
+                .sprdr-ninjin {
+                    width: 100%;
+                    background-color: $lightblue;
+                    margin-top: 9.6vw;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 9.6vw;
+                        background-color: $yellow;
+                        @include absolute;
+                        transform: translateY(-100%);
+                    }
+
+                    .sprdr-bg {
+                        width: 100%;
+                        height: 9.6vw;
+                        @include absolute;
+                        transform: translateY(-100%);
+                    }
+
+                    .sprdr-bg-text {
+                        @include absolute;
+                        transform: translateY(-40%);
+                    }
+
+                    h2 {
+                        padding-top: 16vw;
+                        @include h2;
+                        text-align: center;
+                    }
+
+                    .sprdr-detail_img {
+                        display: block;
+                        width: calc(100vw - 48px);
+                        height: calc(100vw - 48px);
+                        margin: 40px auto 0 auto;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .sprdr-detail-copy {
+                        width: 100%;
+                        background-color: $white;
+                        padding-bottom: 24px;
+                        position: relative;
+                        z-index: 0;
+
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 18px;
+                            background-color: $white;
+                            @include absolute;
+                            transform: translateY(-100%);
+                        }
+
+                        h3 {
+                            padding: 24px 0 0 24px;
+                            @include font-l;
+                            font-weight: 700;
+                            color: $black;
+                        }
+
+                        p {
+                            width: calc(100% - 48px);
+                            margin: 12px auto 0 auto;
+                        }
+
+                        p:nth-of-type(2) {
+                            @include font-ss;
+                            color: $black;
+
+                            span {
+                                @include font-3l;
+                                color: $black;
+                            }
+                        }
+
+                        .sprdr-detail-cta {
+                            width: calc(100% - 48px);
+                            height: 48px;
+                            border-radius: 40px;
+                            background-color: $lemonyellow;
+                            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+                            margin: 12px auto 0 auto;
+
+                            a {
+                                @include center;
+                                font-weight: 700;
+                                color: $blue;
+                                position: relative;
+
+                                img {
+                                    width: 60px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    transform: translate(-9.3vw, -50%) rotate(15deg);
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
