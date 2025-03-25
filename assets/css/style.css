@@ -160,23 +160,22 @@ html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(2) img:nth-of-type(
   right: 0;
   transform: translateX(13.8375vw);
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin {
+html body .sprdr_main .sprdr-detail article {
   width: 100%;
-  background-color: #F0F8F8;
+  padding-bottom: 54px;
   margin-top: 9.6vw;
   position: relative;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin::before {
+html body .sprdr_main .sprdr-detail article::before {
   content: "";
   width: 100%;
   height: 9.6vw;
-  background-color: #F7F7D0;
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(-100%);
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-bg {
+html body .sprdr_main .sprdr-detail article .sprdr-bg {
   width: 100%;
   height: 9.6vw;
   position: absolute;
@@ -184,20 +183,20 @@ html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-bg {
   left: 0;
   transform: translateY(-100%);
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-bg-text {
+html body .sprdr_main .sprdr-detail article .sprdr-bg-text {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(-40%);
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin h2 {
+html body .sprdr_main .sprdr-detail article h2 {
   padding-top: 16vw;
   font-size: 20px;
   font-weight: 700;
   color: #084E80;
   text-align: center;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail_img {
+html body .sprdr_main .sprdr-detail article .sprdr_img {
   display: block;
   width: calc(100vw - 48px);
   height: calc(100vw - 48px);
@@ -205,14 +204,15 @@ html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail_img {
   position: relative;
   z-index: 1;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy {
+html body .sprdr_main .sprdr-detail article .sprdr-copy {
   width: 100%;
   background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   padding-bottom: 24px;
   position: relative;
   z-index: 0;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy::before {
+html body .sprdr_main .sprdr-detail article .sprdr-copy::before {
   content: "";
   width: 100%;
   height: 18px;
@@ -222,26 +222,26 @@ html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy::before {
   left: 0;
   transform: translateY(-100%);
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy h3 {
+html body .sprdr_main .sprdr-detail article .sprdr-copy h3 {
   padding: 24px 0 0 24px;
   font-size: 16px;
   font-weight: 700;
   color: #414143;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy p {
+html body .sprdr_main .sprdr-detail article .sprdr-copy p {
   width: calc(100% - 48px);
   margin: 12px auto 0 auto;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy p:nth-of-type(2) {
+html body .sprdr_main .sprdr-detail article .sprdr-copy p:nth-of-type(2) {
   font-size: 12px;
   color: #414143;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy p:nth-of-type(2) span {
+html body .sprdr_main .sprdr-detail article .sprdr-copy p:nth-of-type(2) span {
   font-size: 24px;
   font-weight: 700;
   color: #414143;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy .sprdr-detail-cta {
+html body .sprdr_main .sprdr-detail article .sprdr-copy .sprdr-cta {
   width: calc(100% - 48px);
   height: 48px;
   border-radius: 40px;
@@ -249,7 +249,7 @@ html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy .sprdr-deta
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
   margin: 12px auto 0 auto;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy .sprdr-detail-cta a {
+html body .sprdr_main .sprdr-detail article .sprdr-copy .sprdr-cta a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,10 +257,56 @@ html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy .sprdr-deta
   color: #084E80;
   position: relative;
 }
-html body .sprdr_main .sprdr-detail .sprdr-ninjin .sprdr-detail-copy .sprdr-detail-cta a img {
+html body .sprdr_main .sprdr-detail article .sprdr-copy .sprdr-cta a img {
   width: 60px;
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(-9.3vw, -50%) rotate(15deg);
+}
+html body .sprdr_main .sprdr-detail article .sprdr-photo {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+html body .sprdr_main .sprdr-detail article .sprdr-photo img {
+  display: block;
+  width: calc(100% - 52px);
+  margin: 0 auto;
+}
+html body .sprdr_main .sprdr-detail article .sprdr-photo .sprdr-treat {
+  position: absolute;
+}
+html body .sprdr_main .sprdr-detail article:nth-of-type(odd) {
+  background-color: #F0F8F8;
+}
+html body .sprdr_main .sprdr-detail article:nth-of-type(odd)::before {
+  background-color: #F7F7D0;
+}
+html body .sprdr_main .sprdr-detail article:nth-of-type(even) {
+  background-color: #F7F7D0;
+}
+html body .sprdr_main .sprdr-detail article:nth-of-type(even)::before {
+  background-color: #F0F8F8;
+}
+html body .sprdr_main .sprdr-detail .sprdr-carrot .sprdr-photo .sprdr-treat {
+  width: 47.7vw;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-16.8vw);
+}
+html body .sprdr_main .sprdr-detail .sprdr-honey .sprdr-photo .sprdr-treat {
+  width: 31.2vw;
+  bottom: 0;
+  left: 26px;
+  transform: translate(20px, 20px);
+}
+html body .sprdr_main .sprdr-detail .sprdr-hyuganatsu .sprdr-photo .sprdr-treat {
+  width: 36.6vw;
+  top: 0;
+  right: 0;
+  transform: translate(-20px, 20px);
+}
+html body .sprdr_main .sprdr-detail .sprdr-french {
+  padding-bottom: 100px;
 }
