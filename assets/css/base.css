@@ -86,6 +86,10 @@ pre {
   line-height: 150%;
 }
 
+.sprdr-pc {
+  display: none !important;
+}
+
 html, body {
   width: 100vw;
 }
