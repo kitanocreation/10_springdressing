@@ -17,21 +17,22 @@ html {
 
                 .sprdr-con:nth-of-type(1) {
                     width: 100%;
-                    height: 35vw;
+                    height: 135px;
                     position: relative;
 
                     img:nth-of-type(1) {
-                        width: calc(63.7vw * .95);
-                        transform: translateX(calc(-19.5vw * .95));
+                        width: calc(235px * .95);
+                        transform: translateX(calc(-73px * .95));
                     }
                     
                     img:nth-of-type(2) {
-                        width: fit-content;
-                        height: 43.2vw;
+                        width: auto;
+                        height: calc(162px * .95);
+                        max-height: 100%;
                         position: absolute;
                         top: 0;
                         right: 0;
-                        transform: translateX(26.1vw);
+                        transform: translateX(calc(98px * .95));
                     }
                 }
 
@@ -51,22 +52,23 @@ html {
 
                 .sprdr-con:nth-of-type(3) {
                     width: 100%;
-                    height: 42.5vw;
+                    height: 165px;
                     margin-top: 10px;
                     position: relative;
 
                     img:nth-of-type(1) {
-                        width: 33.3vw;
+                        width: calc(125px * 1.1);
                         margin-left: 20px;
                     }
                     
                     img:nth-of-type(2) {
-                        width: fit-content;
-                        height: calc(61.3vw * .675);
+                        width: auto;
+                        height: calc(137px * 1.2);
+                        max-height: 100%;
                         position: absolute;
                         top: 0;
                         right: 0;
-                        transform: translateX(calc(20.5vw * .675));
+                        transform: translateX(calc(77px * .8));
                     }
                 }
             }
@@ -141,6 +143,7 @@ html {
                         p {
                             width: calc(100% - 48px);
                             margin: 12px auto 0 auto;
+                            color: $black;
                         }
 
                         p:nth-of-type(2) {
@@ -241,14 +244,14 @@ html {
 
                 h2 {
                     padding-left: 16px;
-                    font-size: 28px;
+                    @include font-3l;
                     font-weight: 700;
                     color: $black;
                 }
 
                 ul {
                     width: calc(100% - 32px);
-                    margin: 24px auto 0 auto;
+                    margin: 40px auto 0 auto;
                     display: flex;
                     flex-wrap: wrap;
 
@@ -336,7 +339,9 @@ html {
 
                         img:nth-of-type(2) {
                             width: 15.3vw;
-                            height: fit-content;
+                            max-width: 100%;
+                            height: auto;
+                            max-height: initial;
                             right: 3.3vw;
                             transform: translateX(0);
                         }
@@ -491,6 +496,46 @@ html {
                                 width: calc(14.3vw * .75);
                                 transform: translate(113px, -22px);
                             }
+                        }
+                    }
+                }
+
+                .sprdr-recommend {
+
+                    h2 {
+                        padding-left: 160px;
+                        @include font-3l-pc;
+                    }
+
+                    ul {
+                        width: calc(100% - 320px);
+
+                        li {
+                            width: calc((100% - (16px * 5)) / 6);
+                            margin: 0 0 0 16px;
+                        }
+
+                        li:nth-of-type(even) {
+                            margin-left: 16px;
+                        }
+    
+                        li:nth-of-type(1) {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .sprdr-cta {
+                        width: 22.8vw;
+                    }
+                }
+
+                .sprdr-lp {
+                    padding-top: 100px;
+
+                    ul {
+
+                        li {
+                            width: calc((100% - (16px * 3)) / 4);
                         }
                     }
                 }

@@ -105,6 +105,8 @@ a {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 html body .sprdr-fv {
@@ -119,20 +121,21 @@ html body .sprdr_main .sprdr-epilogue {
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(1) {
   width: 100%;
-  height: 35vw;
+  height: 135px;
   position: relative;
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(1) img:nth-of-type(1) {
-  width: 60.515vw;
-  transform: translateX(-18.525vw);
+  width: 223.25px;
+  transform: translateX(-69.35px);
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(1) img:nth-of-type(2) {
-  width: fit-content;
-  height: 43.2vw;
+  width: auto;
+  height: 153.9px;
+  max-height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(26.1vw);
+  transform: translateX(93.1px);
 }
 html body .sprdr_main .sprdr-epilogue h1 {
   font-size: 28px;
@@ -148,21 +151,22 @@ html body .sprdr_main .sprdr-epilogue p {
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(3) {
   width: 100%;
-  height: 42.5vw;
+  height: 165px;
   margin-top: 10px;
   position: relative;
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(3) img:nth-of-type(1) {
-  width: 33.3vw;
+  width: 137.5px;
   margin-left: 20px;
 }
 html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(3) img:nth-of-type(2) {
-  width: fit-content;
-  height: 41.3775vw;
+  width: auto;
+  height: 164.4px;
+  max-height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(13.8375vw);
+  transform: translateX(61.6px);
 }
 html body .sprdr_main .sprdr-detail article {
   width: 100%;
@@ -235,6 +239,7 @@ html body .sprdr_main .sprdr-detail article .sprdr-copy h3 {
 html body .sprdr_main .sprdr-detail article .sprdr-copy p {
   width: calc(100% - 48px);
   margin: 12px auto 0 auto;
+  color: #414143;
 }
 html body .sprdr_main .sprdr-detail article .sprdr-copy p:nth-of-type(2) {
   font-size: 12px;
@@ -320,13 +325,14 @@ html body .sprdr_main .sprdr-recommend {
 }
 html body .sprdr_main .sprdr-recommend h2 {
   padding-left: 16px;
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: 700;
   font-weight: 700;
   color: #414143;
 }
 html body .sprdr_main .sprdr-recommend ul {
   width: calc(100% - 32px);
-  margin: 24px auto 0 auto;
+  margin: 40px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -390,7 +396,9 @@ html body .sprdr_main .sprdr-recommend:nth-last-of-type(1) {
   }
   html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(1) img:nth-of-type(2) {
     width: 15.3vw;
-    height: fit-content;
+    max-width: 100%;
+    height: auto;
+    max-height: initial;
     right: 3.3vw;
     transform: translateX(0);
   }
@@ -515,5 +523,31 @@ html body .sprdr_main .sprdr-recommend:nth-last-of-type(1) {
   html body .sprdr_main .sprdr-detail .sprdr-hyuganatsu .sprdr-photo .sprdr-treat {
     width: 10.725vw;
     transform: translate(113px, -22px);
+  }
+  html body .sprdr_main .sprdr-recommend h2 {
+    padding-left: 160px;
+    font-size: 28px;
+  }
+  html body .sprdr_main .sprdr-recommend ul {
+    width: calc(100% - 320px);
+  }
+  html body .sprdr_main .sprdr-recommend ul li {
+    width: calc((100% - 80px) / 6);
+    margin: 0 0 0 16px;
+  }
+  html body .sprdr_main .sprdr-recommend ul li:nth-of-type(even) {
+    margin-left: 16px;
+  }
+  html body .sprdr_main .sprdr-recommend ul li:nth-of-type(1) {
+    margin-left: 0;
+  }
+  html body .sprdr_main .sprdr-recommend .sprdr-cta {
+    width: 22.8vw;
+  }
+  html body .sprdr_main .sprdr-lp {
+    padding-top: 100px;
+  }
+  html body .sprdr_main .sprdr-lp ul li {
+    width: calc((100% - 48px) / 4);
   }
 }

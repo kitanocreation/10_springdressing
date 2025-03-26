@@ -39,6 +39,8 @@ a {
 
 img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 @mixin font-s {
@@ -113,6 +115,10 @@ img {
 
 @mixin font-l-pc {
     font-size: 18px;
+}
+
+@mixin font-3l-pc {
+    font-size: 28px;
 }
 
 @mixin h2-pc {
