@@ -124,6 +124,14 @@ html body .sprdr-fv h1 {
   top: 20px;
   left: 10px;
 }
+html body .sprdr-fv .sprdr_img {
+  width: 60%;
+  top: initial;
+  right: 0;
+  bottom: 0;
+  left: initial;
+  transform: translate(-20px, -20px);
+}
 html body .sprdr_main {
   background-color: #F7F7D0;
 }
@@ -392,6 +400,228 @@ html body .sprdr_main .sprdr-recommend:nth-last-of-type(1) {
   padding-bottom: 100px;
 }
 
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 150%;
+}
+
+.sprdr-pc {
+  display: none !important;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.sprdr-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 150%;
+}
+
+.sprdr-pc {
+  display: none !important;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.sprdr-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
   * {
     font-size: 16px;
@@ -402,6 +632,8 @@ html body .sprdr_main .sprdr-recommend:nth-last-of-type(1) {
   .sprdr-pc {
     display: block !important;
   }
+}
+@media screen and (min-width: 768px) {
   html body .sprdr-fv {
     height: 39vw;
   }
@@ -412,6 +644,10 @@ html body .sprdr_main .sprdr-recommend:nth-last-of-type(1) {
   }
   html body .sprdr-fv h1 img {
     height: 100%;
+  }
+  html body .sprdr-fv .sprdr_img {
+    width: 35%;
+    transform: translate(-50px, -25px);
   }
   html body .sprdr_main .sprdr-epilogue .sprdr-con:nth-of-type(1) {
     height: 161px;

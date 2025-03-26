@@ -108,3 +108,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+  .sprdr-sp {
+    display: none !important;
+  }
+  .sprdr-pc {
+    display: block !important;
+  }
+}
