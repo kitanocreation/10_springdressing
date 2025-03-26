@@ -6,6 +6,18 @@ html {
         
         .sprdr-fv {
             height: 100vw;
+            position: relative;
+
+            img {
+                @include absolute;
+            }
+
+            h1 {
+                width: 90%;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
         }
 
         .sprdr_main {
@@ -32,7 +44,7 @@ html {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        transform: translateX(calc(98px * .95));
+                        transform: translateX(calc(98px * .75));
                     }
                 }
 
@@ -234,7 +246,7 @@ html {
                 }
 
                 .sprdr-french {
-                    padding-bottom: 100px;
+                    padding-bottom: 0;
                 }
             }
 
@@ -279,17 +291,7 @@ html {
                 }
 
                 .sprdr-cta {
-                    width: 77.9vw;
-                    height: 48px;
-                    border-radius: 8px;
-                    background-color: $red;
-                    margin: 24px auto 0 auto;
-                    
-                    a {
-                        @include center;
-                        font-weight: 700;
-                        color: $white;
-                    }
+                    @include cta2;
                 }
             }
 
@@ -319,7 +321,17 @@ html {
         body {
             
             .sprdr-fv {
-                height: initial;
+                height: 39vw;
+
+                h1 {
+                    width: 48vw;
+                    height: 28vw;
+                    left: 60px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
             }
 
             .sprdr_main {
@@ -397,7 +409,7 @@ html {
                             width: 29.5vw;
                             height: initial;
                             left: 50%;
-                            transform: translate(-50%, -100%);
+                            transform: translate(-50%, calc(-100% + 1px));
                         }
 
                         .sprdr-bg-text {
@@ -498,6 +510,10 @@ html {
                             }
                         }
                     }
+
+                    .sprdr-french {
+                        padding-bottom: 100px;
+                    }
                 }
 
                 .sprdr-recommend {
@@ -525,7 +541,7 @@ html {
                     }
 
                     .sprdr-cta {
-                        width: 22.8vw;
+                        @include cta2-pc;
                     }
                 }
 

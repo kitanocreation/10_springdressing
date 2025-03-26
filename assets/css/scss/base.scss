@@ -90,6 +90,12 @@ img {
     background-color: $lemonyellow;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
     margin: 12px auto 0 auto;
+    transition-duration: .2s;
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transform: translateY(2px)
+    }
 
     a {
         @include center;
@@ -104,6 +110,25 @@ img {
             right: 0;
             transform: translate(-9.3vw, -50%) rotate(15deg);
         }
+    }
+}
+
+@mixin cta2 {
+    width: 77.9vw;
+    height: 48px;
+    border-radius: 8px;
+    background-color: $red;
+    margin: 24px auto 0 auto;
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transform: translateY(2px)
+    }
+    
+    a {
+        @include center;
+        font-weight: 700;
+        color: $white;
     }
 }
 
@@ -127,6 +152,16 @@ img {
 
 @mixin cta1-pc {
 
+    &:active {
+        box-shadow: initial;
+        transform: initial;
+    }
+
+    &:hover {
+        box-shadow: 0 0 0 0 transparent;
+        transform: translateY(2px)
+    }
+
     a {
         
         img {
@@ -137,4 +172,8 @@ img {
             transform: translate(-5px, -50%) rotate(15deg);
         }
     }
+}
+
+@mixin cta2-pc {
+    width: 22.8vw;
 }
